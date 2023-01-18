@@ -1,0 +1,9 @@
+-
+ hosts: nodes
+ vars_files:
+
+  - vault_vars.yaml
+ tasks:
+   - name: vault demo
+     debug:
+       msg: "{{ external_vault_var }}"
